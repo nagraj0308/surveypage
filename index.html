@@ -1,0 +1,204 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+	  <style>
+body{
+  background-color: white ;
+  text-align : center;
+}
+#title{
+	font-size:40px;
+  text-align:center;
+}
+#survey-form{
+	background-color: orange;
+	margin: auto;
+	width:50%;
+	float: bottom;
+  text-align:center;
+}
+
+#description{
+	font-size:20px;
+}
+
+.row-tab{
+	display: block;
+	padding-top: 20px;
+}
+.label-name{
+	display: inline-block;
+	text-align: right;
+	width: 40%;
+}
+.name-input{
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	vertical-align: top;
+}
+.radio-input{
+	display: inline-block;
+	text-align: left;
+	width: 50%;
+	vertical-align: top;
+	
+}
+
+#name-label{
+	font-size:20px;
+        text-align: center;
+}
+#name{
+	font-size:15px;
+	display: inline-block;
+}
+
+#email-label{
+	font-size:20px;
+	float: bottom;
+}
+#email{
+	font-size:15px;
+}
+#number-label{
+	font-size:20px;
+}
+#number{
+	font-size:15px;
+}
+#dropdown{
+
+}
+
+#textarea{
+
+}
+#submit{
+	font-size:25px;
+	border: 2px solid orange;
+        outline: #4CAF50 solid 4px;
+	margin:30px;
+  
+
+
+}
+
+
+
+
+ </style>
+	  
+    
+  </head>
+  
+
+
+<body>
+    <h1  id="title">Survey Form</h1>
+  <form  id="survey-form" >
+  <p id="description" >Let us know how we can improve freeCodeCamp</p>
+   
+   <div class="row-tab">
+	<div class="label-name">
+        <label id="name-label">*Name: </label>
+	</div>
+	<div class="name-input">
+	<input type="text" id="name" size="30px" placeholder="Enter Your Name..." required >
+	</div>
+   </div>
+
+   <div class="row-tab">
+	<div class="label-name">
+        <label  id="email-label" >*Email:</label>
+	</div>
+	<div class="name-input">
+	<input id="email" size="30px"  type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter Your Email..." required>
+	</div>
+   </div>
+   <div class="row-tab">
+	<div class="label-name">
+        <label id="number-label" >*Age:</label>
+	</div>
+	<div class="name-input">
+	<input type="number" id="number" size="30px" placeholder="Enter Your Age..." name="age" min="10" max="99" value="21" required>
+	</div>
+   </div>
+
+    <div class="row-tab">
+	<div class="label-name">
+        <label id="number-label" >Which option best describes your current role?</label>
+	</div>
+	<div class="name-input">
+	<select id="dropdown">
+     		<option >Student</option>
+      		<option >Fulltime Job</option>
+      		<option >Fulltime Learner</option>
+      		<option >Perfer not to Stay</option>
+    	</select>
+	</div>
+   </div>
+    <div class="row-tab">
+	<div class="label-name">
+        <label id="number-label" >*How likely is that you would recommend freeCodeCamp to a friend?</label>
+	</div>
+	<div class="radio-input">
+		<div><input type="radio" name="recommend" required>Definitely</div>
+        	<div><input type="radio" name="recommend" required>Maybe</div>
+        	<div><input type="radio" name="recommend" required>Not Sure</div>
+    
+	</div>
+   </div>
+
+   <div class="row-tab">
+	<div class="label-name">
+        <label id="number-label" >What do you like most in FCC:</label>
+	</div>
+	<div class="name-input">
+	<select id="dropdown">
+      		<option >Challenges</option>
+      		<option >Projects</option>
+      		<option >Community</option>
+      		<option >Open Source</option>
+   	</select>
+	</div>
+   </div>
+
+  <div class="row-tab">
+	<div class="label-name">
+        <label id="number-label" >Things that should be improved in the future (Check all that apply):</label>
+	</div>
+	<div class="radio-input">
+		<div><input type="checkbox" value="y" >Front-end Projects</div>
+		<div><input type="checkbox" value="y" >Back-end Projects</div>
+        	<div><input type="checkbox" value="y" >Data Visualization</div>
+        	<div><input type="checkbox" value="y" >Challenges</div>
+        	<div><input type="checkbox" value="y" >Open Source Community</div>
+        	<div><input type="checkbox" value="y" >Gitter help rooms</div>
+        	<div><input type="checkbox" value="y" >Videos</div>
+        	<div><input type="checkbox" value="y" >City Meetups</div>
+        	<div><input type="checkbox" value="y" >Wiki</div>
+        	<div><input type="checkbox" value="y" >Forum</div>
+        	<div><input type="checkbox" value="y" >Additional Courses</div>
+        	
+        </div>
+   </div>
+
+   <div class="row-tab">
+	<div class="label-name">
+        <label id="number-label" >Any Comments or Suggestions?</label>
+	</div>
+	<div class="radio-input">
+		<textarea id="textarea" rows="10" cols="30"  placeholder="Enter Your Text Here...."></textarea>
+    
+	</div>
+   </div>
+
+
+      
+      
+    <button type="submit" id="submit" name="" value="" onclick="alert('Thanks for participating in this survey!!')">Submit</button>
+       
+    </form>
+</body>
+</html>
